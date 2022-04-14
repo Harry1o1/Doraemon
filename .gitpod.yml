@@ -7,7 +7,10 @@ tasks:
     ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts --version &&
     solana --version && 
     solana address && 
-    solana balance
+    solana-keygen new --outfile ~/.config/solana/devnet.json &&
+    solana config set --keypair ~/.config/solana/devnet.json &&
+    solana config set --url https://metaplex.devnet.rpcpool.com/ &&
+    solana config get && solana address
     
   - name: Tsnode
     command: npm i -g ts-node && npm i -g typescript && ts-node --version
