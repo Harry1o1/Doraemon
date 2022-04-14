@@ -9,8 +9,8 @@ tasks:
     solana address && 
     solana-keygen new --outfile ~/.config/solana/devnet.json &&
     solana config set --keypair ~/.config/solana/devnet.json &&
-    solana config set --url https://metaplex.devnet.rpcpool.com/ &&
-    solana config get && solana address
+    solana config set --url https://metaplex.devnet.rpcpool.com/ 
+    
     
   - name: Tsnode
     command: npm i -g ts-node && npm i -g typescript && ts-node --version
