@@ -4,13 +4,8 @@ tasks:
     git clone https://github.com/metaplex-foundation/metaplex.git ~/metaplex &&
     yarn install --cwd ~/metaplex/js/ && 
     npm i -g ts-node && npm i -g typescript && ts-node --version &&
-    ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts --version &&
-    solana --version && 
-    solana address && 
-    solana-keygen new --outfile ~/.config/solana/devnet.json &&
-    solana config set --keypair ~/.config/solana/devnet.json &&
-    solana config set --url https://metaplex.devnet.rpcpool.com/ && 
-    ls
+    ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts --version
+    
     
     
   - name: Tsnode
