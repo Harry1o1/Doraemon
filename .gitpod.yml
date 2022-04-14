@@ -9,7 +9,8 @@ tasks:
     solana address && 
     solana-keygen new --outfile ~/.config/solana/devnet.json &&
     solana config set --keypair ~/.config/solana/devnet.json &&
-    solana config set --url https://metaplex.devnet.rpcpool.com/ 
+    solana config set --url https://metaplex.devnet.rpcpool.com/ && 
+    ls
     
     
   - name: Tsnode
