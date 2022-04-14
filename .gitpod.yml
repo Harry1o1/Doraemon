@@ -5,9 +5,5 @@ tasks:
     
     
   - name: Tsnode
-    command: git clone https://github.com/metaplex-foundation/metaplex.git ~/metaplex &&
-    yarn install --cwd ~/metaplex/js/ && 
-    npm i -g ts-node && npm i -g typescript && ts-node --version &&
-    ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts --version
-
+    command: ls
     
